@@ -1,0 +1,47 @@
+body {
+    --background-color: white;
+    --text-color: black;
+    --elements-color: white;
+    margin: 0;
+    font-family: Nunito, sans-serif;
+}
+
+// Apply dark mode styles
+body.dark {
+    --background-color: hsl(209, 26%, 17%);
+    --text-color: white;
+    --elements-color: hsl(209, 23%, 22%);
+}
+
+header, main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.header-container {
+    box-shadow: 0 2px 4px 0px rgba(0, 0, 0, 0.1);
+    padding-inline: 24px;
+    background-color: var(--elements-color);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+.title {
+    font-weight: 800;
+}
+
+.theme-changer {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
